@@ -1,11 +1,13 @@
+@import '../variables.scss';
+
 .selectdiv {
   position: relative;
   width: 200px;
   /*Don't really need this just for demo styling*/
 
   &:after {
-    content: "^";
-    color: #7e7c80;
+    content: '^';
+    color: $secocol;
     right: 16px;
     /*Adjust for position however you want*/
     -webkit-transform: rotate(180deg);
@@ -27,11 +29,12 @@
     height: 40px;
     padding-left: 1rem;
     font-size: 16px;
-    color: #7e7c80;
+    color: $secocol;
     background-color: #ffffff;
     -ms-word-break: normal;
     word-break: normal;
-    border: solid 1px #7e7c80;
+    border: solid 1px $secocol;
+    border-radius: 4px;
 
     &::-ms-expand {
       display: none;

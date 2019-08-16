@@ -8,9 +8,9 @@ const SimSelect = props => {
   return (
     <div className="selectdiv">
       <select>
-        <option>{children || placeholder || `Mr T sez Select Fool!`}</option>
+        <option selected  disabled hidden>{children || placeholder || `Mr T sez Select Fool!`} </option>
         {names.map((name, i) => (
-          <option key={i} value={name}>
+          <option key={i} value={name} >
             {name}
           </option>
         ))}
